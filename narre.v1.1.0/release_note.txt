@@ -1,0 +1,67 @@
+This is for transition from Phase 1 to Dell
+
+Release Notes:  NARRE v1.1.0 - released to NCO on Sept 4, 2019
+
+Transition to from Tide/Gyre Phase 1 to Venus/Mars
+
+Where is the release tag on subversion/git/vlab?
+    
+  https://vlab.ncep.noaa.gov/redmine/projects/emc-narre-tl/repository?utf8=%E2%9C%93&rev=master
+
+List of external software used (anything outside of your vertical structure), including compilers and version numbers for everything
+                 No 
+
+List of all code/scripts modified with this release
+      jobs/JNARRE_ENSPROD, JNARRE_GETNAM,  JNARRE_GETRAP
+      sorc/narre_ensprod.fd/makefile
+      sorc/narre_ensprod.fd/sref_ens_gen.f 
+Modified for running stable over Alaska region  on Dell 
+      sorc/narre_calPrecip.fd/makefile
+      sorc/compile_narre.sh  (new added  for compiling Fortran codes on Dell)
+   sorc/narre_calPrecip.fd/narre_1hr_precip.f   
+After 2018, RAP dropped large-scale APCP, and added total APCP, so must change this Fortran code accordingly to read total APCP from RAP files
+      scripts/exnarre_ensprod.sh.ecf
+Just added new path for command “ndate” on Dell 
+      modulefiles/v1.1.0
+New added for loading modules and compiling Fortran codes on Dell   
+
+What changes were made to the above code/scripts to support the new architecture?
+      In jobs,  nam and rap paths are modified in all 3 job files
+      In sorc/narre_ensprod.fd, makefile is modified by using new lib path on Dell
+      In sorc/narre_calPrecip.fd, makefile is modified by using new lib path on Dell 
+
+Were any other changes made that aren’t directly related to the transition?
+      No 
+       
+Are there any changes to incoming data needs or outgoing products? 
+       The paths of incoming NAM and RAP files are changed
+ 
+If output filenames are changing, list the current and new filename
+     Old: RAPprod=/com2/rap/para
+            COMINman=/com2/nam/prod
+
+     New: RAPprod=/gpfs/hps/nco/ops/com/rap/prod
+              COMINnam=/gpfs/dell1/nco/ops/com/nam/prod
+
+Compute resource information, for every job:
+Total 1
+1 per node
+Serial 
+Memory requirements: no change 
+List any other LSF resource information requirements or MPI tunables
+               No 
+*** Providing LSF and/or ecFlow submission scripts as part of release tag is preferred; if they are provided then this information is not needed in the release notes. 
+               No 
+Runtime changes compared to current production (/com/logs/runtime/daily/* for current stats)
+  No change
+Disk space required per day or per cycle; data retention on disk will remain the same unless otherwise requested
+  No change
+Dissemination will remain the same unless otherwise communicated to NCO and a PNS/SCN issued
+  No change
+HPSS archive retention will remain the same unless approval granted by HPCRAC
+ N change
+What are your up and downstream dependencies?
+ Upstream dependencies: RAP and NAM
+ Downstream dependencies: verf_g2g  
+
+ 

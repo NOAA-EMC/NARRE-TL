@@ -1,0 +1,685 @@
+++ module load ics/12.1
++++ /usrx/local/Modules/3.2.10/bin/modulecmd bash load ics/12.1
+++ eval
+++ module load bacio/v2.0.2
++++ /usrx/local/Modules/3.2.10/bin/modulecmd bash load bacio/v2.0.2
+++ eval BACIO_LIB4=/nwprod2/lib/bacio/v2.0.2/libbacio_v2.0.2_4.a ';export' 'BACIO_LIB4;BACIO_LIB8=/nwprod2/lib/bacio/v2.0.2/libbacio_v2.0.2_8.a' ';export' 'BACIO_LIB8;BACIO_SRC=/nwprod2/lib/bacio/v2.0.2/src' ';export' 'BACIO_SRC;BACIO_VER=v2.0.2' ';export' 'BACIO_VER;COMP=intel' ';export' 'COMP;LOADEDMODULES=EnvVars/1.0.1:ibmpe/1.3.0.12:ics/12.1:lsf/9.1:hpss/4.0.1.2:HDF5/1.8.9/serial:bacio/v2.0.2' ';export' 'LOADEDMODULES;_LMFILES_=/usrx/local/modulefiles/EnvVars/1.0.1:/usrx/local/modulefiles/ibmpe/1.3.0.12:/usrx/local/modulefiles/ics/12.1:/usrx/local/modulefiles/lsf/9.1:/usrx/local/modulefiles/hpss/4.0.1.2:/usrx/local/modulefiles/HDF5/1.8.9/serial:/nwprod2/lib/modulefiles/bacio/v2.0.2' ';export' '_LMFILES_;'
++++ BACIO_LIB4=/nwprod2/lib/bacio/v2.0.2/libbacio_v2.0.2_4.a
++++ export BACIO_LIB4
++++ BACIO_LIB8=/nwprod2/lib/bacio/v2.0.2/libbacio_v2.0.2_8.a
++++ export BACIO_LIB8
++++ BACIO_SRC=/nwprod2/lib/bacio/v2.0.2/src
++++ export BACIO_SRC
++++ BACIO_VER=v2.0.2
++++ export BACIO_VER
++++ COMP=intel
++++ export COMP
++++ LOADEDMODULES=EnvVars/1.0.1:ibmpe/1.3.0.12:ics/12.1:lsf/9.1:hpss/4.0.1.2:HDF5/1.8.9/serial:bacio/v2.0.2
++++ export LOADEDMODULES
++++ _LMFILES_=/usrx/local/modulefiles/EnvVars/1.0.1:/usrx/local/modulefiles/ibmpe/1.3.0.12:/usrx/local/modulefiles/ics/12.1:/usrx/local/modulefiles/lsf/9.1:/usrx/local/modulefiles/hpss/4.0.1.2:/usrx/local/modulefiles/HDF5/1.8.9/serial:/nwprod2/lib/modulefiles/bacio/v2.0.2
++++ export _LMFILES_
+++ module load w3emc/v2.2.0
++++ /usrx/local/Modules/3.2.10/bin/modulecmd bash load w3emc/v2.2.0
+++ eval LOADEDMODULES=EnvVars/1.0.1:ibmpe/1.3.0.12:ics/12.1:lsf/9.1:hpss/4.0.1.2:HDF5/1.8.9/serial:bacio/v2.0.2:w3emc/v2.2.0 ';export' 'LOADEDMODULES;W3EMC_INC4=/nwprod2/lib/w3emc/v2.2.0/include/w3emc_v2.2.0_4' ';export' 'W3EMC_INC4;W3EMC_INC8=/nwprod2/lib/w3emc/v2.2.0/include/w3emc_v2.2.0_8' ';export' 'W3EMC_INC8;W3EMC_INCd=/nwprod2/lib/w3emc/v2.2.0/include/w3emc_v2.2.0_d' ';export' 'W3EMC_INCd;W3EMC_LIB4=/nwprod2/lib/w3emc/v2.2.0/libw3emc_v2.2.0_4.a' ';export' 'W3EMC_LIB4;W3EMC_LIB8=/nwprod2/lib/w3emc/v2.2.0/libw3emc_v2.2.0_8.a' ';export' 'W3EMC_LIB8;W3EMC_LIBd=/nwprod2/lib/w3emc/v2.2.0/libw3emc_v2.2.0_d.a' ';export' 'W3EMC_LIBd;W3EMC_SRC=/nwprod2/lib/w3emc/v2.2.0/src/w3emc_v2.2.0' ';export' 'W3EMC_SRC;W3EMC_VER=v2.2.0' ';export' 'W3EMC_VER;_LMFILES_=/usrx/local/modulefiles/EnvVars/1.0.1:/usrx/local/modulefiles/ibmpe/1.3.0.12:/usrx/local/modulefiles/ics/12.1:/usrx/local/modulefiles/lsf/9.1:/usrx/local/modulefiles/hpss/4.0.1.2:/usrx/local/modulefiles/HDF5/1.8.9/serial:/nwprod2/lib/modulefiles/bacio/v2.0.2:/nwprod2/lib/modulefiles/w3emc/v2.2.0' ';export' '_LMFILES_;'
++++ LOADEDMODULES=EnvVars/1.0.1:ibmpe/1.3.0.12:ics/12.1:lsf/9.1:hpss/4.0.1.2:HDF5/1.8.9/serial:bacio/v2.0.2:w3emc/v2.2.0
++++ export LOADEDMODULES
++++ W3EMC_INC4=/nwprod2/lib/w3emc/v2.2.0/include/w3emc_v2.2.0_4
++++ export W3EMC_INC4
++++ W3EMC_INC8=/nwprod2/lib/w3emc/v2.2.0/include/w3emc_v2.2.0_8
++++ export W3EMC_INC8
++++ W3EMC_INCd=/nwprod2/lib/w3emc/v2.2.0/include/w3emc_v2.2.0_d
++++ export W3EMC_INCd
++++ W3EMC_LIB4=/nwprod2/lib/w3emc/v2.2.0/libw3emc_v2.2.0_4.a
++++ export W3EMC_LIB4
++++ W3EMC_LIB8=/nwprod2/lib/w3emc/v2.2.0/libw3emc_v2.2.0_8.a
++++ export W3EMC_LIB8
++++ W3EMC_LIBd=/nwprod2/lib/w3emc/v2.2.0/libw3emc_v2.2.0_d.a
++++ export W3EMC_LIBd
++++ W3EMC_SRC=/nwprod2/lib/w3emc/v2.2.0/src/w3emc_v2.2.0
++++ export W3EMC_SRC
++++ W3EMC_VER=v2.2.0
++++ export W3EMC_VER
++++ _LMFILES_=/usrx/local/modulefiles/EnvVars/1.0.1:/usrx/local/modulefiles/ibmpe/1.3.0.12:/usrx/local/modulefiles/ics/12.1:/usrx/local/modulefiles/lsf/9.1:/usrx/local/modulefiles/hpss/4.0.1.2:/usrx/local/modulefiles/HDF5/1.8.9/serial:/nwprod2/lib/modulefiles/bacio/v2.0.2:/nwprod2/lib/modulefiles/w3emc/v2.2.0
++++ export _LMFILES_
+++ module load w3nco/v2.0.6
++++ /usrx/local/Modules/3.2.10/bin/modulecmd bash load w3nco/v2.0.6
+++ eval LOADEDMODULES=EnvVars/1.0.1:ibmpe/1.3.0.12:ics/12.1:lsf/9.1:hpss/4.0.1.2:HDF5/1.8.9/serial:bacio/v2.0.2:w3emc/v2.2.0:w3nco/v2.0.6 ';export' 'LOADEDMODULES;W3NCO_LIB4=/nwprod2/lib/w3nco/v2.0.6/libw3nco_v2.0.6_4.a' ';export' 'W3NCO_LIB4;W3NCO_LIB8=/nwprod2/lib/w3nco/v2.0.6/libw3nco_v2.0.6_8.a' ';export' 'W3NCO_LIB8;W3NCO_LIBd=/nwprod2/lib/w3nco/v2.0.6/libw3nco_v2.0.6_d.a' ';export' 'W3NCO_LIBd;W3NCO_SRC=/nwprod2/lib/w3nco/v2.0.6/src/w3nco_v2.0.6' ';export' 'W3NCO_SRC;W3NCO_VER=v2.0.6' ';export' 'W3NCO_VER;_LMFILES_=/usrx/local/modulefiles/EnvVars/1.0.1:/usrx/local/modulefiles/ibmpe/1.3.0.12:/usrx/local/modulefiles/ics/12.1:/usrx/local/modulefiles/lsf/9.1:/usrx/local/modulefiles/hpss/4.0.1.2:/usrx/local/modulefiles/HDF5/1.8.9/serial:/nwprod2/lib/modulefiles/bacio/v2.0.2:/nwprod2/lib/modulefiles/w3emc/v2.2.0:/nwprod2/lib/modulefiles/w3nco/v2.0.6' ';export' '_LMFILES_;'
++++ LOADEDMODULES=EnvVars/1.0.1:ibmpe/1.3.0.12:ics/12.1:lsf/9.1:hpss/4.0.1.2:HDF5/1.8.9/serial:bacio/v2.0.2:w3emc/v2.2.0:w3nco/v2.0.6
++++ export LOADEDMODULES
++++ W3NCO_LIB4=/nwprod2/lib/w3nco/v2.0.6/libw3nco_v2.0.6_4.a
++++ export W3NCO_LIB4
++++ W3NCO_LIB8=/nwprod2/lib/w3nco/v2.0.6/libw3nco_v2.0.6_8.a
++++ export W3NCO_LIB8
++++ W3NCO_LIBd=/nwprod2/lib/w3nco/v2.0.6/libw3nco_v2.0.6_d.a
++++ export W3NCO_LIBd
++++ W3NCO_SRC=/nwprod2/lib/w3nco/v2.0.6/src/w3nco_v2.0.6
++++ export W3NCO_SRC
++++ W3NCO_VER=v2.0.6
++++ export W3NCO_VER
++++ _LMFILES_=/usrx/local/modulefiles/EnvVars/1.0.1:/usrx/local/modulefiles/ibmpe/1.3.0.12:/usrx/local/modulefiles/ics/12.1:/usrx/local/modulefiles/lsf/9.1:/usrx/local/modulefiles/hpss/4.0.1.2:/usrx/local/modulefiles/HDF5/1.8.9/serial:/nwprod2/lib/modulefiles/bacio/v2.0.2:/nwprod2/lib/modulefiles/w3emc/v2.2.0:/nwprod2/lib/modulefiles/w3nco/v2.0.6
++++ export _LMFILES_
+++ module load g2/v2.5.0
++++ /usrx/local/Modules/3.2.10/bin/modulecmd bash load g2/v2.5.0
+++ eval G2_INC4=/nwprod2/lib/g2/v2.5.0/include/g2_v2.5.0_4 ';export' 'G2_INC4;G2_INCd=/nwprod2/lib/g2/v2.5.0/include/g2_v2.5.0_d' ';export' 'G2_INCd;G2_LIB4=/nwprod2/lib/g2/v2.5.0/libg2_v2.5.0_4.a' ';export' 'G2_LIB4;G2_LIBd=/nwprod2/lib/g2/v2.5.0/libg2_v2.5.0_d.a' ';export' 'G2_LIBd;G2_SRC=/nwprod2/lib/g2/v2.5.0/src/g2_v2.5.0' ';export' 'G2_SRC;G2_VER=v2.5.0' ';export' 'G2_VER;LOADEDMODULES=EnvVars/1.0.1:ibmpe/1.3.0.12:ics/12.1:lsf/9.1:hpss/4.0.1.2:HDF5/1.8.9/serial:bacio/v2.0.2:w3emc/v2.2.0:w3nco/v2.0.6:g2/v2.5.0' ';export' 'LOADEDMODULES;_LMFILES_=/usrx/local/modulefiles/EnvVars/1.0.1:/usrx/local/modulefiles/ibmpe/1.3.0.12:/usrx/local/modulefiles/ics/12.1:/usrx/local/modulefiles/lsf/9.1:/usrx/local/modulefiles/hpss/4.0.1.2:/usrx/local/modulefiles/HDF5/1.8.9/serial:/nwprod2/lib/modulefiles/bacio/v2.0.2:/nwprod2/lib/modulefiles/w3emc/v2.2.0:/nwprod2/lib/modulefiles/w3nco/v2.0.6:/nwprod2/lib/modulefiles/g2/v2.5.0' ';export' '_LMFILES_;'
++++ G2_INC4=/nwprod2/lib/g2/v2.5.0/include/g2_v2.5.0_4
++++ export G2_INC4
++++ G2_INCd=/nwprod2/lib/g2/v2.5.0/include/g2_v2.5.0_d
++++ export G2_INCd
++++ G2_LIB4=/nwprod2/lib/g2/v2.5.0/libg2_v2.5.0_4.a
++++ export G2_LIB4
++++ G2_LIBd=/nwprod2/lib/g2/v2.5.0/libg2_v2.5.0_d.a
++++ export G2_LIBd
++++ G2_SRC=/nwprod2/lib/g2/v2.5.0/src/g2_v2.5.0
++++ export G2_SRC
++++ G2_VER=v2.5.0
++++ export G2_VER
++++ LOADEDMODULES=EnvVars/1.0.1:ibmpe/1.3.0.12:ics/12.1:lsf/9.1:hpss/4.0.1.2:HDF5/1.8.9/serial:bacio/v2.0.2:w3emc/v2.2.0:w3nco/v2.0.6:g2/v2.5.0
++++ export LOADEDMODULES
++++ _LMFILES_=/usrx/local/modulefiles/EnvVars/1.0.1:/usrx/local/modulefiles/ibmpe/1.3.0.12:/usrx/local/modulefiles/ics/12.1:/usrx/local/modulefiles/lsf/9.1:/usrx/local/modulefiles/hpss/4.0.1.2:/usrx/local/modulefiles/HDF5/1.8.9/serial:/nwprod2/lib/modulefiles/bacio/v2.0.2:/nwprod2/lib/modulefiles/w3emc/v2.2.0:/nwprod2/lib/modulefiles/w3nco/v2.0.6:/nwprod2/lib/modulefiles/g2/v2.5.0
++++ export _LMFILES_
+++ module load jasper/v1.900.1
++++ /usrx/local/Modules/3.2.10/bin/modulecmd bash load jasper/v1.900.1
+++ eval JASPER_INC=/nwprod2/lib/jasper/v1.900.1/include ';export' 'JASPER_INC;JASPER_LIB=/nwprod2/lib/jasper/v1.900.1/libjasper_v1.900.1.a' ';export' 'JASPER_LIB;JASPER_LIBDIR=/nwprod2/lib/jasper/v1.900.1' ';export' 'JASPER_LIBDIR;JASPER_LIBl=/nwprod2/lib/jasper/v1.900.1/libjasper_v1.900.1.la' ';export' 'JASPER_LIBl;JASPER_SRC=/nwprod2/lib/jasper/v1.900.1/src' ';export' 'JASPER_SRC;JASPER_VER=v1.900.1' ';export' 'JASPER_VER;LOADEDMODULES=EnvVars/1.0.1:ibmpe/1.3.0.12:ics/12.1:lsf/9.1:hpss/4.0.1.2:HDF5/1.8.9/serial:bacio/v2.0.2:w3emc/v2.2.0:w3nco/v2.0.6:g2/v2.5.0:jasper/v1.900.1' ';export' 'LOADEDMODULES;_LMFILES_=/usrx/local/modulefiles/EnvVars/1.0.1:/usrx/local/modulefiles/ibmpe/1.3.0.12:/usrx/local/modulefiles/ics/12.1:/usrx/local/modulefiles/lsf/9.1:/usrx/local/modulefiles/hpss/4.0.1.2:/usrx/local/modulefiles/HDF5/1.8.9/serial:/nwprod2/lib/modulefiles/bacio/v2.0.2:/nwprod2/lib/modulefiles/w3emc/v2.2.0:/nwprod2/lib/modulefiles/w3nco/v2.0.6:/nwprod2/lib/modulefiles/g2/v2.5.0:/nwprod2/lib/modulefiles/jasper/v1.900.1' ';export' '_LMFILES_;'
++++ JASPER_INC=/nwprod2/lib/jasper/v1.900.1/include
++++ export JASPER_INC
++++ JASPER_LIB=/nwprod2/lib/jasper/v1.900.1/libjasper_v1.900.1.a
++++ export JASPER_LIB
++++ JASPER_LIBDIR=/nwprod2/lib/jasper/v1.900.1
++++ export JASPER_LIBDIR
++++ JASPER_LIBl=/nwprod2/lib/jasper/v1.900.1/libjasper_v1.900.1.la
++++ export JASPER_LIBl
++++ JASPER_SRC=/nwprod2/lib/jasper/v1.900.1/src
++++ export JASPER_SRC
++++ JASPER_VER=v1.900.1
++++ export JASPER_VER
++++ LOADEDMODULES=EnvVars/1.0.1:ibmpe/1.3.0.12:ics/12.1:lsf/9.1:hpss/4.0.1.2:HDF5/1.8.9/serial:bacio/v2.0.2:w3emc/v2.2.0:w3nco/v2.0.6:g2/v2.5.0:jasper/v1.900.1
++++ export LOADEDMODULES
++++ _LMFILES_=/usrx/local/modulefiles/EnvVars/1.0.1:/usrx/local/modulefiles/ibmpe/1.3.0.12:/usrx/local/modulefiles/ics/12.1:/usrx/local/modulefiles/lsf/9.1:/usrx/local/modulefiles/hpss/4.0.1.2:/usrx/local/modulefiles/HDF5/1.8.9/serial:/nwprod2/lib/modulefiles/bacio/v2.0.2:/nwprod2/lib/modulefiles/w3emc/v2.2.0:/nwprod2/lib/modulefiles/w3nco/v2.0.6:/nwprod2/lib/modulefiles/g2/v2.5.0:/nwprod2/lib/modulefiles/jasper/v1.900.1
++++ export _LMFILES_
+++ module load z/v1.2.6
++++ /usrx/local/Modules/3.2.10/bin/modulecmd bash load z/v1.2.6
+++ eval LOADEDMODULES=EnvVars/1.0.1:ibmpe/1.3.0.12:ics/12.1:lsf/9.1:hpss/4.0.1.2:HDF5/1.8.9/serial:bacio/v2.0.2:w3emc/v2.2.0:w3nco/v2.0.6:g2/v2.5.0:jasper/v1.900.1:z/v1.2.6 ';export' 'LOADEDMODULES;Z_INC=/nwprod2/lib/z/v1.2.6/include' ';export' 'Z_INC;Z_LIB=/nwprod2/lib/z/v1.2.6/libz_v1.2.6.a' ';export' 'Z_LIB;Z_SRC=/nwprod2/lib/z/v1.2.6/src' ';export' 'Z_SRC;Z_VER=v1.2.6' ';export' 'Z_VER;_LMFILES_=/usrx/local/modulefiles/EnvVars/1.0.1:/usrx/local/modulefiles/ibmpe/1.3.0.12:/usrx/local/modulefiles/ics/12.1:/usrx/local/modulefiles/lsf/9.1:/usrx/local/modulefiles/hpss/4.0.1.2:/usrx/local/modulefiles/HDF5/1.8.9/serial:/nwprod2/lib/modulefiles/bacio/v2.0.2:/nwprod2/lib/modulefiles/w3emc/v2.2.0:/nwprod2/lib/modulefiles/w3nco/v2.0.6:/nwprod2/lib/modulefiles/g2/v2.5.0:/nwprod2/lib/modulefiles/jasper/v1.900.1:/nwprod2/lib/modulefiles/z/v1.2.6' ';export' '_LMFILES_;'
++++ LOADEDMODULES=EnvVars/1.0.1:ibmpe/1.3.0.12:ics/12.1:lsf/9.1:hpss/4.0.1.2:HDF5/1.8.9/serial:bacio/v2.0.2:w3emc/v2.2.0:w3nco/v2.0.6:g2/v2.5.0:jasper/v1.900.1:z/v1.2.6
++++ export LOADEDMODULES
++++ Z_INC=/nwprod2/lib/z/v1.2.6/include
++++ export Z_INC
++++ Z_LIB=/nwprod2/lib/z/v1.2.6/libz_v1.2.6.a
++++ export Z_LIB
++++ Z_SRC=/nwprod2/lib/z/v1.2.6/src
++++ export Z_SRC
++++ Z_VER=v1.2.6
++++ export Z_VER
++++ _LMFILES_=/usrx/local/modulefiles/EnvVars/1.0.1:/usrx/local/modulefiles/ibmpe/1.3.0.12:/usrx/local/modulefiles/ics/12.1:/usrx/local/modulefiles/lsf/9.1:/usrx/local/modulefiles/hpss/4.0.1.2:/usrx/local/modulefiles/HDF5/1.8.9/serial:/nwprod2/lib/modulefiles/bacio/v2.0.2:/nwprod2/lib/modulefiles/w3emc/v2.2.0:/nwprod2/lib/modulefiles/w3nco/v2.0.6:/nwprod2/lib/modulefiles/g2/v2.5.0:/nwprod2/lib/modulefiles/jasper/v1.900.1:/nwprod2/lib/modulefiles/z/v1.2.6
++++ export _LMFILES_
+++ module load png/v1.2.44
++++ /usrx/local/Modules/3.2.10/bin/modulecmd bash load png/v1.2.44
+++ eval LOADEDMODULES=EnvVars/1.0.1:ibmpe/1.3.0.12:ics/12.1:lsf/9.1:hpss/4.0.1.2:HDF5/1.8.9/serial:bacio/v2.0.2:w3emc/v2.2.0:w3nco/v2.0.6:g2/v2.5.0:jasper/v1.900.1:z/v1.2.6:png/v1.2.44 ';export' 'LOADEDMODULES;PNG_INC=/nwprod2/lib/png/v1.2.44/include' ';export' 'PNG_INC;PNG_LIB=/nwprod2/lib/png/v1.2.44/libpng.a' ';export' 'PNG_LIB;PNG_LIB12=/nwprod2/lib/png/v1.2.44/libpng12.a' ';export' 'PNG_LIB12;PNG_LIBDIR=/nwprod2/lib/png/v1.2.44' ';export' 'PNG_LIBDIR;PNG_LIBso=/nwprod2/lib/png/v1.2.44/libpng.s' ';export' 'PNG_LIBso;PNG_SRC=/nwprod2/lib/png/v1.2.44/src' ';export' 'PNG_SRC;PNG_VER=v1.2.44' ';export' 'PNG_VER;_LMFILES_=/usrx/local/modulefiles/EnvVars/1.0.1:/usrx/local/modulefiles/ibmpe/1.3.0.12:/usrx/local/modulefiles/ics/12.1:/usrx/local/modulefiles/lsf/9.1:/usrx/local/modulefiles/hpss/4.0.1.2:/usrx/local/modulefiles/HDF5/1.8.9/serial:/nwprod2/lib/modulefiles/bacio/v2.0.2:/nwprod2/lib/modulefiles/w3emc/v2.2.0:/nwprod2/lib/modulefiles/w3nco/v2.0.6:/nwprod2/lib/modulefiles/g2/v2.5.0:/nwprod2/lib/modulefiles/jasper/v1.900.1:/nwprod2/lib/modulefiles/z/v1.2.6:/nwprod2/lib/modulefiles/png/v1.2.44' ';export' '_LMFILES_;'
++++ LOADEDMODULES=EnvVars/1.0.1:ibmpe/1.3.0.12:ics/12.1:lsf/9.1:hpss/4.0.1.2:HDF5/1.8.9/serial:bacio/v2.0.2:w3emc/v2.2.0:w3nco/v2.0.6:g2/v2.5.0:jasper/v1.900.1:z/v1.2.6:png/v1.2.44
++++ export LOADEDMODULES
++++ PNG_INC=/nwprod2/lib/png/v1.2.44/include
++++ export PNG_INC
++++ PNG_LIB=/nwprod2/lib/png/v1.2.44/libpng.a
++++ export PNG_LIB
++++ PNG_LIB12=/nwprod2/lib/png/v1.2.44/libpng12.a
++++ export PNG_LIB12
++++ PNG_LIBDIR=/nwprod2/lib/png/v1.2.44
++++ export PNG_LIBDIR
++++ PNG_LIBso=/nwprod2/lib/png/v1.2.44/libpng.s
++++ export PNG_LIBso
++++ PNG_SRC=/nwprod2/lib/png/v1.2.44/src
++++ export PNG_SRC
++++ PNG_VER=v1.2.44
++++ export PNG_VER
++++ _LMFILES_=/usrx/local/modulefiles/EnvVars/1.0.1:/usrx/local/modulefiles/ibmpe/1.3.0.12:/usrx/local/modulefiles/ics/12.1:/usrx/local/modulefiles/lsf/9.1:/usrx/local/modulefiles/hpss/4.0.1.2:/usrx/local/modulefiles/HDF5/1.8.9/serial:/nwprod2/lib/modulefiles/bacio/v2.0.2:/nwprod2/lib/modulefiles/w3emc/v2.2.0:/nwprod2/lib/modulefiles/w3nco/v2.0.6:/nwprod2/lib/modulefiles/g2/v2.5.0:/nwprod2/lib/modulefiles/jasper/v1.900.1:/nwprod2/lib/modulefiles/z/v1.2.6:/nwprod2/lib/modulefiles/png/v1.2.44
++++ export _LMFILES_
+++ make
+mkdir -p exec include/g2_v2.6.0_4 include/g2_v2.6.0_d && \
+	( set -xue ; cd src ; make -f makefile_4 ) && \
+	( set -xue ; cd src ; make -f makefile_d ) && \
+	( set -xue ; cd unit_test ; make all )
++ cd src
++ make -f makefile_4
+make[1]: Entering directory `/gpfs/gp2/nco/ops/nwpara/narre.v1.0.4/libg2/g2_v2.6.0/src'
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gridtemplates.f
+ar  -ruv ../libg2_v2.6.0_4.a gridtemplates.o
+ar: creating ../libg2_v2.6.0_4.a
+a - gridtemplates.o
+rm -f gridtemplates.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 pdstemplates.f
+ar  -ruv ../libg2_v2.6.0_4.a pdstemplates.o
+a - pdstemplates.o
+rm -f pdstemplates.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 drstemplates.f
+ar  -ruv ../libg2_v2.6.0_4.a drstemplates.o
+a - drstemplates.o
+rm -f drstemplates.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gribmod.f
+ar  -ruv ../libg2_v2.6.0_4.a gribmod.o
+a - gribmod.o
+rm -f gribmod.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 realloc.f
+ar  -ruv ../libg2_v2.6.0_4.a realloc.o
+a - realloc.o
+rm -f realloc.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 addfield.f
+ar  -ruv ../libg2_v2.6.0_4.a addfield.o
+a - addfield.o
+rm -f addfield.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 addgrid.f
+ar  -ruv ../libg2_v2.6.0_4.a addgrid.o
+a - addgrid.o
+rm -f addgrid.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 addlocal.f
+ar  -ruv ../libg2_v2.6.0_4.a addlocal.o
+a - addlocal.o
+rm -f addlocal.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 getfield.f
+ar  -ruv ../libg2_v2.6.0_4.a getfield.o
+a - getfield.o
+rm -f getfield.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gb_info.f
+ar  -ruv ../libg2_v2.6.0_4.a gb_info.o
+a - gb_info.o
+rm -f gb_info.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gf_getfld.f
+ar  -ruv ../libg2_v2.6.0_4.a gf_getfld.o
+a - gf_getfld.o
+rm -f gf_getfld.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gf_free.f
+ar  -ruv ../libg2_v2.6.0_4.a gf_free.o
+a - gf_free.o
+rm -f gf_free.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gf_unpack1.f
+ar  -ruv ../libg2_v2.6.0_4.a gf_unpack1.o
+a - gf_unpack1.o
+rm -f gf_unpack1.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gf_unpack2.f
+ar  -ruv ../libg2_v2.6.0_4.a gf_unpack2.o
+a - gf_unpack2.o
+rm -f gf_unpack2.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gf_unpack3.f
+ar  -ruv ../libg2_v2.6.0_4.a gf_unpack3.o
+a - gf_unpack3.o
+rm -f gf_unpack3.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gf_unpack4.f
+ar  -ruv ../libg2_v2.6.0_4.a gf_unpack4.o
+a - gf_unpack4.o
+rm -f gf_unpack4.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gf_unpack5.f
+ar  -ruv ../libg2_v2.6.0_4.a gf_unpack5.o
+a - gf_unpack5.o
+rm -f gf_unpack5.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gf_unpack6.f
+ar  -ruv ../libg2_v2.6.0_4.a gf_unpack6.o
+a - gf_unpack6.o
+rm -f gf_unpack6.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gf_unpack7.f
+ar  -ruv ../libg2_v2.6.0_4.a gf_unpack7.o
+a - gf_unpack7.o
+rm -f gf_unpack7.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gettemplates.f
+ar  -ruv ../libg2_v2.6.0_4.a gettemplates.o
+a - gettemplates.o
+rm -f gettemplates.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 getlocal.f
+ar  -ruv ../libg2_v2.6.0_4.a getlocal.o
+a - getlocal.o
+rm -f getlocal.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 getdim.f
+ar  -ruv ../libg2_v2.6.0_4.a getdim.o
+a - getdim.o
+rm -f getdim.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 getpoly.f
+ar  -ruv ../libg2_v2.6.0_4.a getpoly.o
+a - getpoly.o
+rm -f getpoly.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gribcreate.f
+ar  -ruv ../libg2_v2.6.0_4.a gribcreate.o
+a - gribcreate.o
+rm -f gribcreate.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gribend.f
+ar  -ruv ../libg2_v2.6.0_4.a gribend.o
+a - gribend.o
+rm -f gribend.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gribinfo.f
+ar  -ruv ../libg2_v2.6.0_4.a gribinfo.o
+a - gribinfo.o
+rm -f gribinfo.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 mkieee.f
+ar  -ruv ../libg2_v2.6.0_4.a mkieee.o
+a - mkieee.o
+rm -f mkieee.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 rdieee.f
+ar  -ruv ../libg2_v2.6.0_4.a rdieee.o
+a - rdieee.o
+rm -f rdieee.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 intmath.f
+ar  -ruv ../libg2_v2.6.0_4.a intmath.o
+a - intmath.o
+rm -f intmath.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 simpack.f
+ar  -ruv ../libg2_v2.6.0_4.a simpack.o
+a - simpack.o
+rm -f simpack.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 simunpack.f
+ar  -ruv ../libg2_v2.6.0_4.a simunpack.o
+a - simunpack.o
+rm -f simunpack.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 cmplxpack.f
+ar  -ruv ../libg2_v2.6.0_4.a cmplxpack.o
+a - cmplxpack.o
+rm -f cmplxpack.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 compack.f
+ar  -ruv ../libg2_v2.6.0_4.a compack.o
+a - compack.o
+rm -f compack.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 misspack.f
+ar  -ruv ../libg2_v2.6.0_4.a misspack.o
+a - misspack.o
+rm -f misspack.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 pack_gp.f
+ar  -ruv ../libg2_v2.6.0_4.a pack_gp.o
+a - pack_gp.o
+rm -f pack_gp.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 reduce.f
+ar  -ruv ../libg2_v2.6.0_4.a reduce.o
+a - reduce.o
+rm -f reduce.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 comunpack.f
+ar  -ruv ../libg2_v2.6.0_4.a comunpack.o
+a - comunpack.o
+rm -f comunpack.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 specpack.f
+ar  -ruv ../libg2_v2.6.0_4.a specpack.o
+a - specpack.o
+rm -f specpack.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 specunpack.f
+ar  -ruv ../libg2_v2.6.0_4.a specunpack.o
+a - specunpack.o
+rm -f specunpack.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 jpcpack.f
+ar  -ruv ../libg2_v2.6.0_4.a jpcpack.o
+a - jpcpack.o
+rm -f jpcpack.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 jpcunpack.f
+ar  -ruv ../libg2_v2.6.0_4.a jpcunpack.o
+a - jpcunpack.o
+rm -f jpcunpack.o
+icc -c -O3 -g -DLINUX -DUSE_JPEG2000 -DUSE_PNG -I/nwprod2/lib/png/v1.2.44/include -I/nwprod2/lib/jasper/v1.900.1/include -I/nwprod2/lib/z/v1.2.6/include -D__64BIT__ enc_jpeg2000.c
+ar  -ruv ../libg2_v2.6.0_4.a enc_jpeg2000.o
+a - enc_jpeg2000.o
+rm -f enc_jpeg2000.o
+icc -c -O3 -g -DLINUX -DUSE_JPEG2000 -DUSE_PNG -I/nwprod2/lib/png/v1.2.44/include -I/nwprod2/lib/jasper/v1.900.1/include -I/nwprod2/lib/z/v1.2.6/include -D__64BIT__ dec_jpeg2000.c
+ar  -ruv ../libg2_v2.6.0_4.a dec_jpeg2000.o
+a - dec_jpeg2000.o
+rm -f dec_jpeg2000.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 pngpack.f
+ar  -ruv ../libg2_v2.6.0_4.a pngpack.o
+a - pngpack.o
+rm -f pngpack.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 pngunpack.f
+ar  -ruv ../libg2_v2.6.0_4.a pngunpack.o
+a - pngunpack.o
+rm -f pngunpack.o
+icc -c -O3 -g -DLINUX -DUSE_JPEG2000 -DUSE_PNG -I/nwprod2/lib/png/v1.2.44/include -I/nwprod2/lib/jasper/v1.900.1/include -I/nwprod2/lib/z/v1.2.6/include -D__64BIT__ enc_png.c
+ar  -ruv ../libg2_v2.6.0_4.a enc_png.o
+a - enc_png.o
+rm -f enc_png.o
+icc -c -O3 -g -DLINUX -DUSE_JPEG2000 -DUSE_PNG -I/nwprod2/lib/png/v1.2.44/include -I/nwprod2/lib/jasper/v1.900.1/include -I/nwprod2/lib/z/v1.2.6/include -D__64BIT__ dec_png.c
+ar  -ruv ../libg2_v2.6.0_4.a dec_png.o
+a - dec_png.o
+rm -f dec_png.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gbytesc.f
+ar  -ruv ../libg2_v2.6.0_4.a gbytesc.o
+a - gbytesc.o
+rm -f gbytesc.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 skgb.f
+ar  -ruv ../libg2_v2.6.0_4.a skgb.o
+a - skgb.o
+rm -f skgb.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 ixgb2.f
+ar  -ruv ../libg2_v2.6.0_4.a ixgb2.o
+a - ixgb2.o
+rm -f ixgb2.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 getidx.f
+ar  -ruv ../libg2_v2.6.0_4.a getidx.o
+a - getidx.o
+rm -f getidx.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 getidxes.f
+ar  -ruv ../libg2_v2.6.0_4.a getidxes.o
+a - getidxes.o
+rm -f getidxes.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 getg2i.f
+ar  -ruv ../libg2_v2.6.0_4.a getg2i.o
+a - getg2i.o
+rm -f getg2i.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 getg2ir.f
+ar  -ruv ../libg2_v2.6.0_4.a getg2ir.o
+a - getg2ir.o
+rm -f getg2ir.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 getgb2s.f
+ar  -ruv ../libg2_v2.6.0_4.a getgb2s.o
+a - getgb2s.o
+rm -f getgb2s.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 getgb2r.f
+ar  -ruv ../libg2_v2.6.0_4.a getgb2r.o
+a - getgb2r.o
+rm -f getgb2r.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 getgb2l.f
+ar  -ruv ../libg2_v2.6.0_4.a getgb2l.o
+a - getgb2l.o
+rm -f getgb2l.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 getgb2.f
+ar  -ruv ../libg2_v2.6.0_4.a getgb2.o
+a - getgb2.o
+rm -f getgb2.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 getgb2p.f
+ar  -ruv ../libg2_v2.6.0_4.a getgb2p.o
+a - getgb2p.o
+rm -f getgb2p.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 getgb2rp.f
+ar  -ruv ../libg2_v2.6.0_4.a getgb2rp.o
+a - getgb2rp.o
+rm -f getgb2rp.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 putgb2.f
+ar  -ruv ../libg2_v2.6.0_4.a putgb2.o
+a - putgb2.o
+rm -f putgb2.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 g2grids.f
+ar  -ruv ../libg2_v2.6.0_4.a g2grids.o
+a - g2grids.o
+rm -f g2grids.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 gdt2gds.f
+ar  -ruv ../libg2_v2.6.0_4.a gdt2gds.o
+a - gdt2gds.o
+rm -f gdt2gds.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 params.f
+ar  -ruv ../libg2_v2.6.0_4.a params.o
+a - params.o
+rm -f params.o
+ifort -c -O3 -g -assume noold_ldout_format -module ../include/g2_v2.6.0_4 params_ecmwf.f
+ar  -ruv ../libg2_v2.6.0_4.a params_ecmwf.o
+a - params_ecmwf.o
+rm -f params_ecmwf.o
+make[1]: Leaving directory `/gpfs/gp2/nco/ops/nwpara/narre.v1.0.4/libg2/g2_v2.6.0/src'
++ cd src
++ make -f makefile_d
+make[1]: Entering directory `/gpfs/gp2/nco/ops/nwpara/narre.v1.0.4/libg2/g2_v2.6.0/src'
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gridtemplates.f
+ar  -ruv ../libg2_v2.6.0_d.a gridtemplates.o
+ar: creating ../libg2_v2.6.0_d.a
+a - gridtemplates.o
+rm -f gridtemplates.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d pdstemplates.f
+ar  -ruv ../libg2_v2.6.0_d.a pdstemplates.o
+a - pdstemplates.o
+rm -f pdstemplates.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d drstemplates.f
+ar  -ruv ../libg2_v2.6.0_d.a drstemplates.o
+a - drstemplates.o
+rm -f drstemplates.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gribmod.f
+ar  -ruv ../libg2_v2.6.0_d.a gribmod.o
+a - gribmod.o
+rm -f gribmod.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d realloc.f
+ar  -ruv ../libg2_v2.6.0_d.a realloc.o
+a - realloc.o
+rm -f realloc.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d addfield.f
+ar  -ruv ../libg2_v2.6.0_d.a addfield.o
+a - addfield.o
+rm -f addfield.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d addgrid.f
+ar  -ruv ../libg2_v2.6.0_d.a addgrid.o
+a - addgrid.o
+rm -f addgrid.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d addlocal.f
+ar  -ruv ../libg2_v2.6.0_d.a addlocal.o
+a - addlocal.o
+rm -f addlocal.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d getfield.f
+ar  -ruv ../libg2_v2.6.0_d.a getfield.o
+a - getfield.o
+rm -f getfield.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gb_info.f
+ar  -ruv ../libg2_v2.6.0_d.a gb_info.o
+a - gb_info.o
+rm -f gb_info.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gf_getfld.f
+ar  -ruv ../libg2_v2.6.0_d.a gf_getfld.o
+a - gf_getfld.o
+rm -f gf_getfld.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gf_free.f
+ar  -ruv ../libg2_v2.6.0_d.a gf_free.o
+a - gf_free.o
+rm -f gf_free.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gf_unpack1.f
+ar  -ruv ../libg2_v2.6.0_d.a gf_unpack1.o
+a - gf_unpack1.o
+rm -f gf_unpack1.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gf_unpack2.f
+ar  -ruv ../libg2_v2.6.0_d.a gf_unpack2.o
+a - gf_unpack2.o
+rm -f gf_unpack2.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gf_unpack3.f
+ar  -ruv ../libg2_v2.6.0_d.a gf_unpack3.o
+a - gf_unpack3.o
+rm -f gf_unpack3.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gf_unpack4.f
+ar  -ruv ../libg2_v2.6.0_d.a gf_unpack4.o
+a - gf_unpack4.o
+rm -f gf_unpack4.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gf_unpack5.f
+ar  -ruv ../libg2_v2.6.0_d.a gf_unpack5.o
+a - gf_unpack5.o
+rm -f gf_unpack5.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gf_unpack6.f
+ar  -ruv ../libg2_v2.6.0_d.a gf_unpack6.o
+a - gf_unpack6.o
+rm -f gf_unpack6.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gf_unpack7.f
+ar  -ruv ../libg2_v2.6.0_d.a gf_unpack7.o
+a - gf_unpack7.o
+rm -f gf_unpack7.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gettemplates.f
+ar  -ruv ../libg2_v2.6.0_d.a gettemplates.o
+a - gettemplates.o
+rm -f gettemplates.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d getlocal.f
+ar  -ruv ../libg2_v2.6.0_d.a getlocal.o
+a - getlocal.o
+rm -f getlocal.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d getdim.f
+ar  -ruv ../libg2_v2.6.0_d.a getdim.o
+a - getdim.o
+rm -f getdim.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d getpoly.f
+ar  -ruv ../libg2_v2.6.0_d.a getpoly.o
+a - getpoly.o
+rm -f getpoly.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gribcreate.f
+ar  -ruv ../libg2_v2.6.0_d.a gribcreate.o
+a - gribcreate.o
+rm -f gribcreate.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gribend.f
+ar  -ruv ../libg2_v2.6.0_d.a gribend.o
+a - gribend.o
+rm -f gribend.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gribinfo.f
+ar  -ruv ../libg2_v2.6.0_d.a gribinfo.o
+a - gribinfo.o
+rm -f gribinfo.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d mkieee.f
+ar  -ruv ../libg2_v2.6.0_d.a mkieee.o
+a - mkieee.o
+rm -f mkieee.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d rdieee.f
+ar  -ruv ../libg2_v2.6.0_d.a rdieee.o
+a - rdieee.o
+rm -f rdieee.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d intmath.f
+ar  -ruv ../libg2_v2.6.0_d.a intmath.o
+a - intmath.o
+rm -f intmath.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d simpack.f
+ar  -ruv ../libg2_v2.6.0_d.a simpack.o
+a - simpack.o
+rm -f simpack.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d simunpack.f
+ar  -ruv ../libg2_v2.6.0_d.a simunpack.o
+a - simunpack.o
+rm -f simunpack.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d cmplxpack.f
+ar  -ruv ../libg2_v2.6.0_d.a cmplxpack.o
+a - cmplxpack.o
+rm -f cmplxpack.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d compack.f
+ar  -ruv ../libg2_v2.6.0_d.a compack.o
+a - compack.o
+rm -f compack.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d misspack.f
+ar  -ruv ../libg2_v2.6.0_d.a misspack.o
+a - misspack.o
+rm -f misspack.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d pack_gp.f
+ar  -ruv ../libg2_v2.6.0_d.a pack_gp.o
+a - pack_gp.o
+rm -f pack_gp.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d reduce.f
+ar  -ruv ../libg2_v2.6.0_d.a reduce.o
+a - reduce.o
+rm -f reduce.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d comunpack.f
+ar  -ruv ../libg2_v2.6.0_d.a comunpack.o
+a - comunpack.o
+rm -f comunpack.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d specpack.f
+ar  -ruv ../libg2_v2.6.0_d.a specpack.o
+a - specpack.o
+rm -f specpack.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d specunpack.f
+ar  -ruv ../libg2_v2.6.0_d.a specunpack.o
+a - specunpack.o
+rm -f specunpack.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d jpcpack.f
+ar  -ruv ../libg2_v2.6.0_d.a jpcpack.o
+a - jpcpack.o
+rm -f jpcpack.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d jpcunpack.f
+ar  -ruv ../libg2_v2.6.0_d.a jpcunpack.o
+a - jpcunpack.o
+rm -f jpcunpack.o
+icc -c -O3 -g -DLINUX -DUSE_JPEG2000 -DUSE_PNG -I/nwprod2/lib/png/v1.2.44/include -I/nwprod2/lib/jasper/v1.900.1/include -I/nwprod2/lib/z/v1.2.6/include -D__64BIT__ enc_jpeg2000.c
+ar  -ruv ../libg2_v2.6.0_d.a enc_jpeg2000.o
+a - enc_jpeg2000.o
+rm -f enc_jpeg2000.o
+icc -c -O3 -g -DLINUX -DUSE_JPEG2000 -DUSE_PNG -I/nwprod2/lib/png/v1.2.44/include -I/nwprod2/lib/jasper/v1.900.1/include -I/nwprod2/lib/z/v1.2.6/include -D__64BIT__ dec_jpeg2000.c
+ar  -ruv ../libg2_v2.6.0_d.a dec_jpeg2000.o
+a - dec_jpeg2000.o
+rm -f dec_jpeg2000.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d pngpack.f
+ar  -ruv ../libg2_v2.6.0_d.a pngpack.o
+a - pngpack.o
+rm -f pngpack.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d pngunpack.f
+ar  -ruv ../libg2_v2.6.0_d.a pngunpack.o
+a - pngunpack.o
+rm -f pngunpack.o
+icc -c -O3 -g -DLINUX -DUSE_JPEG2000 -DUSE_PNG -I/nwprod2/lib/png/v1.2.44/include -I/nwprod2/lib/jasper/v1.900.1/include -I/nwprod2/lib/z/v1.2.6/include -D__64BIT__ enc_png.c
+ar  -ruv ../libg2_v2.6.0_d.a enc_png.o
+a - enc_png.o
+rm -f enc_png.o
+icc -c -O3 -g -DLINUX -DUSE_JPEG2000 -DUSE_PNG -I/nwprod2/lib/png/v1.2.44/include -I/nwprod2/lib/jasper/v1.900.1/include -I/nwprod2/lib/z/v1.2.6/include -D__64BIT__ dec_png.c
+ar  -ruv ../libg2_v2.6.0_d.a dec_png.o
+a - dec_png.o
+rm -f dec_png.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gbytesc.f
+ar  -ruv ../libg2_v2.6.0_d.a gbytesc.o
+a - gbytesc.o
+rm -f gbytesc.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d skgb.f
+ar  -ruv ../libg2_v2.6.0_d.a skgb.o
+a - skgb.o
+rm -f skgb.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d ixgb2.f
+ar  -ruv ../libg2_v2.6.0_d.a ixgb2.o
+a - ixgb2.o
+rm -f ixgb2.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d getidx.f
+ar  -ruv ../libg2_v2.6.0_d.a getidx.o
+a - getidx.o
+rm -f getidx.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d getidxes.f
+ar  -ruv ../libg2_v2.6.0_d.a getidxes.o
+a - getidxes.o
+rm -f getidxes.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d getg2i.f
+ar  -ruv ../libg2_v2.6.0_d.a getg2i.o
+a - getg2i.o
+rm -f getg2i.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d getg2ir.f
+ar  -ruv ../libg2_v2.6.0_d.a getg2ir.o
+a - getg2ir.o
+rm -f getg2ir.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d getgb2s.f
+ar  -ruv ../libg2_v2.6.0_d.a getgb2s.o
+a - getgb2s.o
+rm -f getgb2s.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d getgb2r.f
+ar  -ruv ../libg2_v2.6.0_d.a getgb2r.o
+a - getgb2r.o
+rm -f getgb2r.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d getgb2l.f
+ar  -ruv ../libg2_v2.6.0_d.a getgb2l.o
+a - getgb2l.o
+rm -f getgb2l.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d getgb2.f
+ar  -ruv ../libg2_v2.6.0_d.a getgb2.o
+a - getgb2.o
+rm -f getgb2.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d getgb2p.f
+ar  -ruv ../libg2_v2.6.0_d.a getgb2p.o
+a - getgb2p.o
+rm -f getgb2p.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d getgb2rp.f
+ar  -ruv ../libg2_v2.6.0_d.a getgb2rp.o
+a - getgb2rp.o
+rm -f getgb2rp.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d putgb2.f
+ar  -ruv ../libg2_v2.6.0_d.a putgb2.o
+a - putgb2.o
+rm -f putgb2.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d g2grids.f
+ar  -ruv ../libg2_v2.6.0_d.a g2grids.o
+a - g2grids.o
+rm -f g2grids.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d gdt2gds.f
+ar  -ruv ../libg2_v2.6.0_d.a gdt2gds.o
+a - gdt2gds.o
+rm -f gdt2gds.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d params.f
+ar  -ruv ../libg2_v2.6.0_d.a params.o
+a - params.o
+rm -f params.o
+ifort -c -O3 -g -assume noold_ldout_format -r8 -i4 -module ../include/g2_v2.6.0_d params_ecmwf.f
+ar  -ruv ../libg2_v2.6.0_d.a params_ecmwf.o
+a - params_ecmwf.o
+rm -f params_ecmwf.o
+make[1]: Leaving directory `/gpfs/gp2/nco/ops/nwpara/narre.v1.0.4/libg2/g2_v2.6.0/src'
++ cd unit_test
++ make all
+make[1]: Entering directory `/gpfs/gp2/nco/ops/nwpara/narre.v1.0.4/libg2/g2_v2.6.0/unit_test'
+ifort -o ../exec/g2_unit_test_4 -O0 -check all -debug all -traceback test_g2.f90 -L.. -lg2_v2.6.0_4 /nwprod2/lib/png/v1.2.44/libpng.a /nwprod2/lib/jasper/v1.900.1/libjasper_v1.900.1.a /nwprod2/lib/w3nco/v2.0.6/libw3nco_v2.0.6_4.a /nwprod2/lib/z/v1.2.6/libz_v1.2.6.a
+/nwprod2/lib/jasper/v1.900.1/libjasper_v1.900.1.a(jas_stream.o): In function `jas_stream_tmpfile':
+/nwprod/lib/sorc/jasper-1.900.1/src/libjasper/base/jas_stream.c:368: warning: the use of `tmpnam' is dangerous, better use `mkstemp'
+ifort -o ../exec/g2_unit_test_d -O0 -check all -debug all -traceback -r8 -i4 test_g2.f90 -L.. -lg2_v2.6.0_d /nwprod2/lib/png/v1.2.44/libpng.a /nwprod2/lib/jasper/v1.900.1/libjasper_v1.900.1.a /nwprod2/lib/w3nco/v2.0.6/libw3nco_v2.0.6_4.a /nwprod2/lib/z/v1.2.6/libz_v1.2.6.a
+/nwprod2/lib/jasper/v1.900.1/libjasper_v1.900.1.a(jas_stream.o): In function `jas_stream_tmpfile':
+/nwprod/lib/sorc/jasper-1.900.1/src/libjasper/base/jas_stream.c:368: warning: the use of `tmpnam' is dangerous, better use `mkstemp'
+ifort -o ../exec/g2_dump_values_4 -O0 -check all -debug all -traceback dump_values.f90 -L.. -lg2_v2.6.0_4 /nwprod2/lib/png/v1.2.44/libpng.a /nwprod2/lib/jasper/v1.900.1/libjasper_v1.900.1.a /nwprod2/lib/w3nco/v2.0.6/libw3nco_v2.0.6_4.a /nwprod2/lib/z/v1.2.6/libz_v1.2.6.a
+/nwprod2/lib/jasper/v1.900.1/libjasper_v1.900.1.a(jas_stream.o): In function `jas_stream_tmpfile':
+/nwprod/lib/sorc/jasper-1.900.1/src/libjasper/base/jas_stream.c:368: warning: the use of `tmpnam' is dangerous, better use `mkstemp'
+ifort -o ../exec/g2_dump_values_d -O0 -check all -debug all -traceback -r8 -i4 dump_values.f90 -L.. -lg2_v2.6.0_d /nwprod2/lib/png/v1.2.44/libpng.a /nwprod2/lib/jasper/v1.900.1/libjasper_v1.900.1.a /nwprod2/lib/w3nco/v2.0.6/libw3nco_v2.0.6_4.a /nwprod2/lib/z/v1.2.6/libz_v1.2.6.a
+/nwprod2/lib/jasper/v1.900.1/libjasper_v1.900.1.a(jas_stream.o): In function `jas_stream_tmpfile':
+/nwprod/lib/sorc/jasper-1.900.1/src/libjasper/base/jas_stream.c:368: warning: the use of `tmpnam' is dangerous, better use `mkstemp'
+make[1]: Leaving directory `/gpfs/gp2/nco/ops/nwpara/narre.v1.0.4/libg2/g2_v2.6.0/unit_test'

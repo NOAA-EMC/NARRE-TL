@@ -1,0 +1,43 @@
+#!/bin/sh
+set -aux
+
+module purge
+module load /nwpara2/modulefiles/NARRE/v1.0.4
+# module load /nwprod2/modulefiles/NARRE/v1.0.3
+module unload g2
+module lis
+
+#module unload ics
+#module load ics/15.0.3
+
+export G2_PATH=/nwpara2/narre.v1.0.4/libg2/g2_v2.6.0
+export  G2_SRC=$G2_PATH/src
+export G2_INC4=$G2_PATH/include/g2_v2.6.0_4
+export G2_INCd=$G2_PATH/include/g2_v2.6.0_d
+export G2_LIB4=$G2_PATH/libg2_v2.6.0_4.a
+export G2_LIBd=$G2_PATH/libg2_v2.6.0_d.a
+
+setenv G2_VER v2.6.0
+
+SORCnarre=`pwd`
+EXEC=`pwd`/../exec
+mkdir -p $EXEC
+
+#compile product generator sorc
+cd $SORCnarre/narre_ensprod.fd
+make clean
+make
+make copy
+
+#compile Precip code
+cd $SORCnarre/narre_calPrecip.fd
+make clean
+make narre_precip
+mv  narre_precip ${EXEC}/.
+make narre_precip3hr
+mv narre_precip3hr ${EXEC}/.
+
+echo "All compilatios done"
+
+exit
+
