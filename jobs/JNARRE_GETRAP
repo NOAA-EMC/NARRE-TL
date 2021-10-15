@@ -78,8 +78,8 @@ export SENDDBN=${SENDDBN:-NO}
 ####################################
 # Specify Execution Areas
 ####################################
-export narre_ver=${narre_ver:-v1.2.0} 
-export HOMEnarre=${HOMEnarre:-$NWROOT/${RUN}.${narre_ver}}
+#export narre_ver=${narre_ver:-v1.2.0} 
+export HOMEnarre=${HOMEnarre:-${PACKAGEROOT}/${RUN}.${narre_ver}}
 export EXECnarre=${EXECnarre:-${HOMEnarre}/exec}
 export FIXnarre=${FIXnarre:-$HOMEnarre/fix}
 export PARMnarre=${PARMnarre:-$HOMEnarre/parm}
