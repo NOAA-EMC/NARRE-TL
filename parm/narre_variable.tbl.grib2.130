@@ -1,0 +1,31 @@
+   9       row variables and mean/spread/prob info
+U        2     2  100  M3 850 550 250
+V        2     3  100  M3 850 550 250
+U10      2     2  103  M1 10
+V10      2     3  103  M1 10
+VISB    19     0    1  M1   0  P1  0   < T5 400 800 1600 3200 6400
+FRZL     3     5    4  M1   0
+REF     16   196  200  M0      P1  0   > T5  10   20   30   40   50
+AP3h     1     8    1  M1   0  P1  0   > T5 0.249 2.5  6.35  12.7  25.4
+AP6h     1     8    1  M1   0  P1  0   > T5 0.25  2.51 6.351 12.71 25.41
+  10      special derived variables, each  of which, needs code to process specially
+ICIN   19      7  100  M0  P8 1000 900 800 725 650 575 500 400 = T1 1.0
+CAT    19     22  100  M0  P10 525 450 425 350 300 275 225 200 175 150 = T3 1.0 2.0 3.0
+WIND    2      1  103  M0     P1 10  >  T3 10.3 20.6 30.9
+WIND    2      1  100  M0     P3 850 550 250 > T5 10.3 20.6 30.9 41.2 51.5
+PTYP    1     19    1  M1  0  P1  0  = T1 1.0
+FOG     6    193  103  M1  0  P1 0 > T3 0.016 0.036 0.103
+LLWS    2    192    1  M1  0  P1 0 > T1 20.0
+CONV    1    196  200  M0     P1  1  =  T1  1.0
+FLTR    19   205    1  M0     P1  0  = T4 1.0 2.0 3.0 4.0
+CEIL    3    5    215  M1  0  P1  0 < T6 305 610 915 1372 1830 3050
+   0      No mxp is requrested
+
+NOTE: M/S*1.94 -> KNOT
+      1 INCH = 25.4 
+      1 MM = 25.4 KG/M2 
+      1 M = 3.28 feet
+Note: U10,V10,VISB can not put first in direct variables, otherwise run product generator
+got coredump when only 10members are available although the program has been finished
+(11-member has no such a problem).
+
