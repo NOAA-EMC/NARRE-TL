@@ -4,9 +4,9 @@ Release Notes:  NARRE v1.2.0 - released to NCO
 
 Transition to from  WCOSS(Venus/Mars) to WCOSS2
 
-Where is the release tag on 
+Where is the release tag on github
     
-  https://vlab.ncep.noaa.gov/redmine/projects/emc-narre-tl/repository?utf8=%E2%9C%93&rev=master
+  https://github.com/NOAA-EMC/NARRE-TL/tree/narre.v1.2.0
 
 List of external software used (anything outside of your vertical structure), including compilers and version numbers for everything
                  No 
