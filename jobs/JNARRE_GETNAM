@@ -1,0 +1,166 @@
+#!/bin/bash
+set -xa
+
+#############################################################
+# NARRE getnam 
+# 10/17/2011 Binbin Zhou, modified from Jun Du's SREF job
+# 12/15/2011 Xiaoxue Wang, modified to NCO/EMC template
+# 12/10/2012 Binbin Zhou, moved to WCOSS
+#############################################################
+
+
+######################################################
+# The following two variable could be defined in the
+# loadleveler submission script (the sms script), if
+# not they will take the default values which is set
+# for the NCO running enviroment
+#######################################################
+export RUN_ENVIR=${RUN_ENVIR:-nco}
+export SENDECF=${SENDECF:-YES}
+
+###################################
+# Specify NET and RUN Name and model
+####################################
+export NET=${NET:-narre}
+export RUN=${RUN:-narre}
+
+###############################################################
+# This block can be modified for different Production test
+# environment. This is used for operational testings
+###############################################################
+if [ "$RUN_ENVIR" != nco ]; then
+  typeset -Z2 cyc
+  export cyc=$1
+  export envir=dev
+  export DATA=/lfs/h2/emc/ptmp/Binbin.Zhou/narre/tmpnwprd1/narre_${cyc}_${envir}
+  export DATA_IN=/lfs/h2/emc/ptmp/Binbin.Zhou/narre/tmpnwprd1/narre_${cyc}_${envir}/misc
+  #export jlogfile=$DATA/jlogfile
+  export COMOUT=/lfs/h2/emc/ptmp/Binbin.Zhou/narre/com/${NET}/${envir}/${RUN}.${PDY}/ensprod
+fi
+
+# ###################################
+# SET SHELL PROCESSING VARIABLES
+# ###################################
+export PS4='$SECONDS + ' 
+date
+
+
+########################
+# 
+# obtain unique process id (pid) and make temp directories
+#
+export pid=$$
+export DATA=${DATA:-$DATAROOT/narre_${cyc}_${envir}}
+export DATA_IN=${DATA_IN:-$DATAROOT/narre_${cyc}_${envir}/misc}
+if [ -d $DATA ]; then rm -rf $DATA; fi
+mkdir -m 775 $DATA
+mkdir -p -m 775 $DATA/getnam
+mkdir $DATA_IN
+
+#
+#set flag here to avoid three narre jobs making the working diretory at the same time
+#
+ecflow_client --event release_getrap
+
+cd $DATA/getnam
+
+export cycle=t${cyc}z 
+export MP_HOLDTIME=1000
+export MP_LABELIO=YES
+
+####################################
+# File To Log Msgs
+####################################
+#export jlogfile=${jlogfile:-${DATA}/jlogfile.${job}.${pid}}
+
+####################################
+# Determine Job Output Name on System
+####################################
+export outid="LL$job"
+export jobid="${outid}.o${pid}"
+export pgmout="OUTPUT.${pid}"
+
+####################################
+# SENDECF  - Flag Events on ECF
+# SENDCOM  - Copy files to /com directory
+####################################
+export SENDECF=${SENDECF:-YES}
+export SENDCOM=${SENDCOM:-YES}
+export SENDDBN=${SENDDBN:-YES}
+
+####################################
+# Specify Execution Areas
+####################################
+export HOMEnarre=${HOMEnarre:-${PACKAGEROOT}/${RUN}.${narre_ver}}
+export EXECnarre=${EXECnarre:-${HOMEnarre}/exec}
+export FIXnarre=${FIXnarre:-$HOMEnarre/fix}
+export PARMnarre=${PARMnarre:-$HOMEnarre/parm}
+export USHnarre=${USHnarre:-$HOMEnarre/ush}
+export SCRIPTSnarre=${SCRIPTSnarre:-$HOMEnarre/scripts}
+
+
+
+# Run setpdy and initialize PDY variables
+setpdy.sh
+. ./PDY
+
+#module load grib_util
+##############################################
+# Define NAM COMIN directories 
+##############################################
+export COMINnam=${COMINnam:-$(compath.py $envir/nam/${nam_ver})}
+##################################
+
+#######################################################
+# Pass information which is needed to run the Script
+#######################################################
+
+export VERBOSE=YES
+
+#env
+
+###################################################
+# Execute the Scripts
+# get NAM data
+
+rm -f poescript
+echo "$SCRIPTSnarre/exnarre_getnam.sh 130 >$DATA/getnam130.out 2>&1" > poescript
+echo "$SCRIPTSnarre/exnarre_getnam.sh 242 >$DATA/getnam242.out 2>&1" >> poescript
+
+chmod 775 poescript
+#export MP_PGMMODEL=mpmd
+#export MP_CMDFILE=poescript
+
+#
+# Execute the script.
+#mpirun.lsf -cmdfile poescript -pgmmodel mpmd -labelio yes -stdoutmode ordered
+#mpirun cfp poescript
+mpiexec -np 2 -cpu-bind core cfp ./poescript
+export err=$?; err_chk
+
+#$SCRIPTSnarre/exnarre_getrap.sh.ecf 130 >$DATA/getrap130.out 2>&1 &
+#$SCRIPTSnarre/exnarre_getrap.sh.ecf 242 >$DATA/getrap242.out 2>&1 &
+
+#wait
+
+
+set +x
+echo "######################################"
+echo "  GETNAM130.OUT "
+echo "######################################"
+set -x
+cat $DATA/getnam130.out
+
+
+set +x
+echo "######################################"
+echo "  GETNAM242.OUT "
+echo "######################################"
+set -x
+cat $DATA/getnam242.out
+
+msg="JOB $job HAS COMPLETED NORMALLY."
+postmsg "$jlogfile" "$msg"
+echo "keep $DATA for narre_ensprod jobs"
+
+date
