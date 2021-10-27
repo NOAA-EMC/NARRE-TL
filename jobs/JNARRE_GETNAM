@@ -34,7 +34,6 @@ if [ "$RUN_ENVIR" != nco ]; then
   export envir=dev
   export DATA=/lfs/h2/emc/ptmp/Binbin.Zhou/narre/tmpnwprd1/narre_${cyc}_${envir}
   export DATA_IN=/lfs/h2/emc/ptmp/Binbin.Zhou/narre/tmpnwprd1/narre_${cyc}_${envir}/misc
-  #export jlogfile=$DATA/jlogfile
   export COMOUT=/lfs/h2/emc/ptmp/Binbin.Zhou/narre/com/${NET}/${envir}/${RUN}.${PDY}/ensprod
 fi
 
@@ -49,7 +48,6 @@ date
 # 
 # obtain unique process id (pid) and make temp directories
 #
-export pid=$$
 export DATA=${DATA:-$DATAROOT/narre_${cyc}_${envir}}
 export DATA_IN=${DATA_IN:-$DATAROOT/narre_${cyc}_${envir}/misc}
 if [ -d $DATA ]; then rm -rf $DATA; fi
@@ -68,17 +66,7 @@ export cycle=t${cyc}z
 export MP_HOLDTIME=1000
 export MP_LABELIO=YES
 
-####################################
-# File To Log Msgs
-####################################
-#export jlogfile=${jlogfile:-${DATA}/jlogfile.${job}.${pid}}
-
-####################################
-# Determine Job Output Name on System
-####################################
-export outid="LL$job"
-export jobid="${outid}.o${pid}"
-export pgmout="OUTPUT.${pid}"
+export pgmout="OUTPUT.$$"
 
 ####################################
 # SENDECF  - Flag Events on ECF
@@ -104,7 +92,6 @@ export SCRIPTSnarre=${SCRIPTSnarre:-$HOMEnarre/scripts}
 setpdy.sh
 . ./PDY
 
-#module load grib_util
 ##############################################
 # Define NAM COMIN directories 
 ##############################################
@@ -124,18 +111,16 @@ export VERBOSE=YES
 # get NAM data
 
 rm -f poescript
-echo "$SCRIPTSnarre/exnarre_getnam.sh 130 >$DATA/getnam130.out 2>&1" > poescript
+echo "#!/bin/sh" > poescript
+cat poescript
+echo "$SCRIPTSnarre/exnarre_getnam.sh 130 >$DATA/getnam130.out 2>&1" >> poescript
 echo "$SCRIPTSnarre/exnarre_getnam.sh 242 >$DATA/getnam242.out 2>&1" >> poescript
 
 chmod 775 poescript
-#export MP_PGMMODEL=mpmd
-#export MP_CMDFILE=poescript
 
 #
 # Execute the script.
-#mpirun.lsf -cmdfile poescript -pgmmodel mpmd -labelio yes -stdoutmode ordered
-#mpirun cfp poescript
-mpiexec -np 2 -cpu-bind core cfp ./poescript
+mpiexec --cpu-bind core --configfile ./poescript
 export err=$?; err_chk
 
 #$SCRIPTSnarre/exnarre_getrap.sh.ecf 130 >$DATA/getrap130.out 2>&1 &
@@ -160,7 +145,7 @@ set -x
 cat $DATA/getnam242.out
 
 msg="JOB $job HAS COMPLETED NORMALLY."
-postmsg "$jlogfile" "$msg"
+postmsg  "$msg"
 echo "keep $DATA for narre_ensprod jobs"
 
 date
